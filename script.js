@@ -10,7 +10,11 @@ const grabData = function () {
   return fetch(url)
     .then(response => response.json())
     .then(data => {
-      return data
+      // Make data more simple to handle by looping over each item in the data
+      return data.items.map(item => {
+        // Then create new array of objects for the fields data in each item
+        return item.fields
+      })
     })
   	.catch(error => {
   		console.log("error")
