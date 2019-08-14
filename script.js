@@ -3,7 +3,7 @@ const spaceId = "28s4t9brspwb"
 const environmentId = "master"
 const accessToken = "ea1fM7QlXrHQKmP8PNdmG-OYEgExAisGOWq49w4EObo"
 
-const url = `https://cdn.contentful.com/spaces/${spaceId}/environments/${environmentId}/entries?access_token=${accessToken}`
+const url = `https://cdn.contentful.com/spaces/${spaceId}/environments/${environmentId}/entries?access_token=${accessToken}&order=fields.order&content_type=menuItem`
 
 const sectionTag = document.querySelector("section.grid")
 
